@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  koa-test:
+    ports:
+      - "4500:4500"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    volumes:
+      - ./:/app
+      - koa-node-modules:/app/node_modules
+
+volumes:
+  koa-node-modules:
