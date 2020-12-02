@@ -1,0 +1,21 @@
+{
+  "name": "gitlab-runner-docker-test",
+  "version": "0.0.1",
+  "license": "ISC",
+  "description": "To test gitlab runner",
+  "devDependencies": {
+    "@types/koa": "^2.11.6",
+    "@types/node": "^8.0.29",
+    "nodemon": "^2.0.1",
+    "ts-node": "3.3.0",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "koa": "^2.13.0"
+  },
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  }
+}
